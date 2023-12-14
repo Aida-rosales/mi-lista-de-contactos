@@ -34,3 +34,14 @@ function eliminarcontacto(){
 }
 eliminarcontacto();
 console.log(mi_lista_de_contactos)
+
+function actualizarcontacto(){
+    let actualizar= mi_lista_de_contactos.findIndex((obj=> obj.id == 1));
+    console.log("antes de actualizar:", mi_lista_de_contactos[actualizar]);
+    mi_lista_de_contactos[actualizar].telefono = 3006758456;
+    mi_lista_de_contactos[actualizar].ubicacion.ciudad = "medellin";
+    mi_lista_de_contactos[actualizar].ubicacion.direccion = "envigado";
+    console.log("despues de actualizar: ", mi_lista_de_contactos[actualizar]);
+
+}
+actualizarcontacto();
